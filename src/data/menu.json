@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Home",
+    "key": "home",
+    "icon":"home-outline",
+    "translate": "translate-x-4"
+  },
+  {
+    "label": "About",
+    "key": "about",
+    "icon":"newspaper-outline",
+    "translate": "translate-x-24"
+  },
+  {
+    "label": "Work",
+    "key": "work",
+    "icon": "briefcase-outline",
+    "translate": "translate-x-44"
+  },
+  {
+    "label": "Contact",
+    "key": "contact",
+    "icon": "call-outline",
+    "translate": "translate-x-64"
+  }
+]
