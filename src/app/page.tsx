@@ -1,14 +1,11 @@
-import { Home, About } from "@/components/sections";
+import { About } from "@/components/sections";
 import React, { Suspense } from "react";
 import Loading from "./loading";
-import Link from "next/link";
+import Home from "@/app/(home)";
 
 export default async function Page() {
   return (
     <>
-      <div>
-        <Link href={"/test1"}>Goto test1</Link>
-      </div>
       <Suspense fallback={<Loading />}>
         <section id="home">
           <Home />
