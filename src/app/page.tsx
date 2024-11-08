@@ -1,7 +1,7 @@
-import { About } from "@/components/sections";
+import About from "@/sections/About";
 import React, { Suspense } from "react";
 import Loading from "./loading";
-import Home from "@/app/(home)";
+import Home from "@/sections/Home";
 
 export default async function Page() {
   return (
@@ -17,7 +17,7 @@ export default async function Page() {
         </section>
       </Suspense>
       <Suspense fallback={<Loading />}>
-        <section id="service"></section>
+        <section id="services"></section>
       </Suspense>
       <Suspense fallback={<Loading />}>
         <section id="skills"></section>

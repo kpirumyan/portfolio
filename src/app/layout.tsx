@@ -1,5 +1,5 @@
 import "./global.css";
-import { Footer } from "@/components/sections";
+import Footer from "@/sections/Footer";
 import React, { ReactNode, Suspense } from "react";
 import Loading from "./loading";
 import { jost } from "@/app/fonts";

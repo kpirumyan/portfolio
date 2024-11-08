@@ -1,13 +1,15 @@
-"use client";
+/*"use client";
 
 import { useEffect, useState } from "react";
 import data from "@/data/home.json";
 import { DataPhrase } from "@/interfaces";
 
-const { phrases }: { phrases: DataPhrase[] } = data;
+const { phrases }: { phrases: DataPhrase[] } = data;*/
 
-export default function Phrase2() {
-  const [phraseIdx, setPhraseIdx] = useState(0);
+export default function Phrases() {
+  return <></>
+
+  /*const [phraseIdx, setPhraseIdx] = useState(0);
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -20,5 +22,5 @@ export default function Phrase2() {
     return () => clearInterval(id);
   }, []);
 
-  return <span key={phrases[phraseIdx].id}>{phrases[phraseIdx].text}</span>;
+  return <span key={phrases[phraseIdx].id}>{phrases[phraseIdx].text}</span>;*/
 }
