@@ -22,7 +22,7 @@ const links: LinkData[] = [
 
 export default function SocialLinks() {
   return (
-    <div className="social-links mt-8">
+    <div className="social-links  h-6">
       {links.map((link) => (
         <SocialLink data={link} key={link.id} />
       ))}

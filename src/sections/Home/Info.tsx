@@ -6,8 +6,9 @@ export default function Info() {
     <>
       <div className="title font-bold text-black mt-28">
         <div className="uppercase">
-          <span>Hello, </span>
-          <span className="text-primary">my name is</span>
+          <span>
+            Hello, <span className="text-primary">my name is</span>{" "}
+          </span>
         </div>
         <h1
           className={`text-7xl tracking-widest text-white text-shadow mt-8 mb-2 ${marhey.className}`}
@@ -16,9 +17,9 @@ export default function Info() {
         </h1>
         <div>
           <span className="uppercase tracking-widest">I am </span>
-          <strong className={`text-3xl ml-2 ${caveat.className}`}>
+          <span className={`text-3xl ml-2 ${caveat.className}`}>
             Web Developer
-          </strong>
+          </span>
         </div>
       </div>
 
@@ -27,7 +28,9 @@ export default function Info() {
         good at Next.js. I love to talk with you about our unique.
       </div>
 
-      <SocialLinks />
+      <div className="mt-8">
+        <SocialLinks />
+      </div>
     </>
   );
 }
