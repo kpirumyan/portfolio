@@ -1,14 +1,15 @@
-export interface DataRole {
+export interface RoleData {
   id: number;
   title: string;
 }
 
-export interface DataLink {
+export interface LinkData {
   id: string;
-  icon: string;
+  icon: React.FunctionComponent;
+  url: string;
 }
 
-export interface DataPhrase {
+export interface PhraseData {
   id: number;
   text: string;
 }

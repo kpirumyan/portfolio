@@ -7,7 +7,7 @@ import { jost } from "@/app/fonts";
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`bg-secondary ${jost.className}`}>
+      <body className={`bg-secondary text-tertiary ${jost.className}`}>
         <header>{/*<Menu />*/}</header>
         <main className="container">{children}</main>
         <footer>

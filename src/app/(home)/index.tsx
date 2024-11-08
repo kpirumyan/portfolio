@@ -1,10 +1,10 @@
 import "./styles.css";
-import Title from "./Title";
+import Info from "./Info";
 
 export default function Home() {
   return (
     <>
-      <Title />
+      <Info />
 
       {/*<h2>
       {roles.map((r, i, arr) => <Fragment key={r.key}>

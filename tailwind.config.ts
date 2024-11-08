@@ -13,9 +13,9 @@ const config: Config = {
     },
     extend: {
       colors: {
-        primary: "var(--color-3)",
-        secondary: "var(--color-4)",
-        tertiary: "var(--color-2)",
+        primary: "var(--color-1)",
+        secondary: "var(--color-2)",
+        tertiary: "var(--color-3)",
       },
       boxShadow: {
         shadow1: `3px -3px 0 0px rgba(253, 253, 254, 1)`,
