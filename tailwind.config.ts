@@ -18,8 +18,9 @@ const config: Config = {
         tertiary: "var(--color-3)",
       },
       boxShadow: {
-        shadow1: `3px -3px 0 0px rgba(253, 253, 254, 1)`,
-        shadow2: "-3px -3px 0 0px rgba(253, 253, 254, 1)",
+        1: `3px -3px 0 0px rgba(253, 253, 254, 1)`,
+        2: "-3px -3px 0 0px rgba(253, 253, 254, 1)",
+        3: "5px 5px 0 0px rgba(0, 0, 0, .2)",
       },
       textShadow: {
         DEFAULT:
@@ -28,6 +29,10 @@ const config: Config = {
           "-2px 2px 0 #000, " +
           "-2px -2px 0 #000, " +
           "5px 5px 0 rgba(0, 0, 0, .2)",
+      },
+      lineHeight: {
+        13: "3.25rem",
+        14: "3.5rem",
       },
     },
   },

@@ -11,8 +11,8 @@ export default function Menu() {
       <div
         className={`absolute top-4 w-12 h-12 rounded-full bg-tertiary border-primary border-4 duration-500 ${menu[active].translate}`}
       >
-        <div className="absolute w-3 h-3 top-3 -left-4 rounded-tr-lg shadow-shadow1"></div>
-        <div className="absolute w-3 h-3 top-3 left-11 rounded-tl-lg shadow-shadow2"></div>
+        <div className="absolute w-3 h-3 top-3 -left-4 rounded-tr-lg shadow-1"></div>
+        <div className="absolute w-3 h-3 top-3 left-11 rounded-tl-lg shadow-2"></div>
       </div>
 
       <ul className="flex flex-row justify-center items-end h-12 w-full bg-secondary rounded-t-lg">

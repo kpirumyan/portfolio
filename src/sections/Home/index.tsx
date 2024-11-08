@@ -1,6 +1,5 @@
 import Info from "./Info";
 import Phrases from "./Phrases";
-import { Button } from "@/components";
 import MainImage from "./MainImage";
 
 export default function Home() {
@@ -8,8 +7,14 @@ export default function Home() {
     <>
       <Info />
       <Phrases />
-      <Button />
-      <Button />
+      <div className="mt-10">
+        <a href={"/"} target="_blank" className="btn">
+          Download CV
+        </a>
+        <a href={"/"} target="_blank" className="btn-link">
+          My Skills
+        </a>
+      </div>
       <MainImage />
       {/*<Image /> - BG image */}
     </>
