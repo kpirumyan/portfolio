@@ -4,7 +4,7 @@ import { SocialLinks } from "@/components";
 export default function Info() {
   return (
     <>
-      <div className="title font-bold text-black mt-28">
+      <div className="title font-bold text-black">
         <div className="uppercase">
           <span>
             Hello, <span className="text-primary">my name is</span>{" "}
