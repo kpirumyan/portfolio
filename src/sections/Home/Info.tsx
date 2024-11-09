@@ -11,9 +11,9 @@ export default function Info() {
           </span>
         </div>
         <h1
-          className={`text-7xl tracking-widest text-white text-shadow mt-8 mb-2 ${marhey.className}`}
+          className={`whitespace-nowrap text-7xl tracking-widest text-white text-shadow mt-8 mb-2 ${marhey.className}`}
         >
-          <span className="text-primary">Karen</span> Pirumyan
+          <span className="text-primary ">Karen</span> Pirumyan
         </h1>
         <div>
           <span className="uppercase tracking-widest">I am </span>

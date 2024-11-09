@@ -25,17 +25,6 @@
     @apply flex-1 text-center;
   }
   .bg-title {
-    position: relative;
-    top: -60px;
-    left: -50%;
-    width: 200%;
-    font-size: 350px;
-    font-family: "Caveat";
-    color: rgba(0, 0, 0, .02);
-    font-weight: 700;
-    line-height: 1px;
-    text-align: center;
-    white-space: nowrap;
-    pointer-events: none;
+    @apply relative -top-4 text-[17vw] font-bold leading-[1px] whitespace-nowrap opacity-[.02];
   }
 }
