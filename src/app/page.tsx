@@ -6,31 +6,16 @@ import Home from "@/sections/Home";
 export default async function Page() {
   return (
     <>
-      <Suspense fallback={<Loading />}>
-        <section id="home">
+      <section id="home">
+        <Suspense fallback={<Loading />}>
           <Home />
-        </section>
-      </Suspense>
-      <Suspense fallback={<Loading />}>
-        <section id="about">
+        </Suspense>
+      </section>
+      <section id="about">
+        <Suspense fallback={<Loading />}>
           <About />
-        </section>
-      </Suspense>
-      <Suspense fallback={<Loading />}>
-        <section id="services"></section>
-      </Suspense>
-      <Suspense fallback={<Loading />}>
-        <section id="skills"></section>
-      </Suspense>
-      <Suspense fallback={<Loading />}>
-        <section id="experience"></section>
-      </Suspense>
-      <Suspense fallback={<Loading />}>
-        <section id="education"></section>
-      </Suspense>
-      <Suspense fallback={<Loading />}>
-        <section id="gallery"></section>
-      </Suspense>
+        </Suspense>
+      </section>
     </>
   );
 }

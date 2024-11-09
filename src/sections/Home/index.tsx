@@ -20,7 +20,9 @@ export default function Home() {
       <div className="mx-auto w-full col-start-4 col-span-2">
         <MainImage />
       </div>
-      {/*<Image /> - BG image */}
+      <div className="bg-title">
+        <span> Web Developer </span>
+      </div>
     </div>
   );
 }

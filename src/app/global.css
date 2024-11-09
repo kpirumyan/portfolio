@@ -13,9 +13,29 @@
 
 @layer components {
   .btn {
-    @apply inline-block h-14 rounded-full border-2 border-black px-10 text-sm font-bold uppercase leading-13 tracking-wider text-black shadow-3;
+    @apply inline-block relative bg-secondary h-14 rounded-full border-2 border-black px-10 text-sm font-bold uppercase leading-13 tracking-wider text-black shadow-3 z-10;
   }
   .btn-link {
     @apply relative ml-12 inline-block h-14 px-4 font-bold uppercase leading-14 before:pointer-events-none before:absolute before:-left-12 before:top-1/2 before:h-0.5 before:w-10 before:cursor-none before:bg-black;
+  }
+  .info-tile {
+    @apply absolute flex items-center z-20 text-black border-2 border-solid border-black rounded-full shadow-3 bg-white w-[250px] h-[82px] px-5;
+  }
+  .info-title--col {
+    @apply flex-1 text-center;
+  }
+  .bg-title {
+    position: relative;
+    top: -60px;
+    left: -50%;
+    width: 200%;
+    font-size: 350px;
+    font-family: "Caveat";
+    color: rgba(0, 0, 0, .02);
+    font-weight: 700;
+    line-height: 1px;
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
   }
 }

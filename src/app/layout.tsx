@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <header>{/*<Menu />*/}</header>
         <main className="container">{children}</main>
         <footer>
-          <section id="contacts">
+          <section id="footer" className="mt-16">
             <Suspense fallback={<Loading />}>
               <Footer />
             </Suspense>
