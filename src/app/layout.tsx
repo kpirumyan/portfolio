@@ -9,7 +9,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body className={`bg-secondary text-tertiary ${jost.className}`}>
         <header>{/*<Menu />*/}</header>
-        <main className="container">{children}</main>
+        <main>{children}</main>
         <footer>
           <section id="footer" className="mt-16">
             <Suspense fallback={<Loading />}>

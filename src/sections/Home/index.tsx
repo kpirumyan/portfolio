@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
+    <div className="container">
       <div className="grid grid-cols-12 mt-8">
         <div className="relative col-span-1">
           <div className="v-line-block"></div>
@@ -41,6 +41,6 @@ export default function Home() {
       <div className={`bg-title ${caveat.className}`}>
         <span>Web Developer</span>
       </div>
-    </>
+    </div>
   );
 }
