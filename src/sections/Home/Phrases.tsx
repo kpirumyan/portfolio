@@ -1,26 +1,33 @@
-/*"use client";
+"use client";
 
 import { useEffect, useState } from "react";
-import data from "@/data/home.json";
-import { DataPhrase } from "@/interfaces";
+import { PhraseData } from "@/interfaces";
 
-const { phrases }: { phrases: DataPhrase[] } = data;*/
+const phrases: PhraseData[] = [
+  {
+    id: 1,
+    text: "Always borrow money from a pessimist. He won't expect it back.",
+  },
+  {
+    id: 2,
+    text: "Tempora mutantur et nos mutamur in illis.",
+  },
+  {
+    id: 3,
+    text: "Phrase 3",
+  },
+];
 
 export default function Phrases() {
-  return <></>
-
-  /*const [phraseIdx, setPhraseIdx] = useState(0);
+  const [phraseIdx, setPhraseIdx] = useState(0);
 
   useEffect(() => {
     const id = setInterval(() => {
-      setPhraseIdx((p) => {
-        if (p === phrases.length - 1) return 0;
-        return p + 1;
-      });
-    }, 1000);
+      setPhraseIdx((pId) => (pId + 1) % phrases.length);
+    }, 3000);
 
     return () => clearInterval(id);
   }, []);
 
-  return <span key={phrases[phraseIdx].id}>{phrases[phraseIdx].text}</span>;*/
+  return <span key={phrases[phraseIdx].id}>{phrases[phraseIdx].text}</span>;
 }

@@ -1,5 +1,6 @@
 import { caveat, marhey } from "@/app/fonts";
 import { SocialLinks } from "@/components";
+import Phrases from "@/sections/Home/Phrases";
 
 export default function Info() {
   return (
@@ -24,8 +25,7 @@ export default function Info() {
       </div>
 
       <div className="description opacity-80 text-lg max-w-xl font-normal mt-12">
-        From Armenia, Yerevan. I have rich experience in web design, also I am
-        good at Next.js. I love to talk with you about our unique.
+        <Phrases />
       </div>
 
       <div className="mt-8">

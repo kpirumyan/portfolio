@@ -1,5 +1,4 @@
 import Info from "./Info";
-import Phrases from "./Phrases";
 import MainImage from "./MainImage";
 import { caveat } from "@/app/fonts";
 import Image from "next/image";
@@ -23,7 +22,6 @@ export default function Home() {
 
         <div className="mt-24 col-start-2 col-span-6">
           <Info />
-          <Phrases />
           <div className="mt-10">
             <a href={"/"} target="_blank" className="btn">
               Download CV
