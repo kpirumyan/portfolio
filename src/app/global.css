@@ -28,6 +28,6 @@
     @apply relative -top-4 text-[17vw] font-bold leading-[1px] whitespace-nowrap opacity-[.02];
   }
   .v-line-block {
-    @apply w-0.5 bg-black absolute left-4 top-4 bottom-4 z-10 before:absolute before:w-8 before:h-8 before:-left-4 before:border-2 before:border-solid before:border-black before:rounded-full before:bg-white before:shadow-3 after:absolute after:w-8 after:h-8 after:-left-4 after:border-2 after:border-solid after:border-black after:rounded-full after:bg-white after:shadow-3 after:bottom-0;
+    @apply w-0.5 bg-black absolute top-4 bottom-4 z-10 before:absolute before:w-8 before:h-8 before:-left-4 before:border-2 before:border-solid before:border-black before:rounded-full before:bg-white before:shadow-3 after:absolute after:w-8 after:h-8 after:-left-4 after:border-2 after:border-solid after:border-black after:rounded-full after:bg-white after:shadow-3 after:bottom-0;
   }
 }

@@ -1,4 +1,4 @@
-import { ServiceCards } from "@/components";
+import { ServiceCards, VLine } from "@/components";
 
 export default function Services() {
   return (
@@ -10,6 +10,9 @@ export default function Services() {
         </div>
       </div>
       <ServiceCards />
+      <div className="relative col-span-1 col-start-12">
+        <VLine side={"right"} />
+      </div>
     </div>
   );
 }
