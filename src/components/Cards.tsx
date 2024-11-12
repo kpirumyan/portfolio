@@ -1,34 +1,35 @@
-import { ServiceCard, Dots } from "@/components";
+import { Card, Dots } from "@/components";
 import { ServiceData } from "@/interfaces";
+import { FaGear, FaLaptop, FaThumbsUp } from "react-icons/fa6";
 
 const services: ServiceData[] = [
   {
     title: "Why choose me",
     description:
       "Like other skilled full stack developers, I have experience with C#, PHP, JavaScript, HTML, CSS and all the other usual techie acronyms.",
-    icon: "",
+    icon: FaGear,
   },
   {
     title: "What I do",
     description:
       "I'm a web developer: I write applications and start online services.",
-    icon: "",
+    icon: FaLaptop,
   },
   {
     title: "My mission",
     description:
       "I want to do my favorite thing. I like to create something new which can be useful to others.",
-    icon: "",
+    icon: FaThumbsUp,
   },
 ];
 
-export default function ServiceCards() {
+export default function Cards() {
   return (
-    <div className="grid grid-cols-10 col-span-10 col-start-2">
+    <div className="grid grid-cols-3 col-span-10 col-start-2 gap-8  mb-20">
       {services.map((service) => (
-        <ServiceCard key={service.title} data={service} />
+        <Card key={service.title} data={service} decorSide={"center"} />
       ))}
-      <div className="col-span-2 col-start-5 text-center">
+      <div className="justify-self-center col-start-2">
         <Dots count={services.length} />
       </div>
     </div>

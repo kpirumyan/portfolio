@@ -5,10 +5,7 @@ export default function VLine({ side }: { side: "left" | "right" }) {
   return (
     <>
       <div
-        className={clsx("v-line-block", {
-          "left-4": side === "left",
-          "right-4": side === "right",
-        })}
+        className={clsx("v-line-block", side === "left" ? "left-4" : "right-4")}
       ></div>
       <div className="relative w-[141px] h-full">
         <Image
@@ -16,10 +13,12 @@ export default function VLine({ side }: { side: "left" | "right" }) {
           alt="Image decoration"
           width={141}
           height={141}
-          className={clsx("absolute", {
-            "-bottom-[67px] left-[3px]": side === "left",
-            "-bottom-[67px] right-[3px]": side === "right",
-          })}
+          className={clsx(
+            "absolute",
+            side === "left"
+              ? "-bottom-[67px] left-[3px]"
+              : "-bottom-[67px] right-[3px]",
+          )}
         />
       </div>
     </>

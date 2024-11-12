@@ -9,5 +9,5 @@ export type PhraseData = string[];
 export interface ServiceData {
   title: string;
   description: string;
-  icon: string;
+  icon: React.FunctionComponent;
 }

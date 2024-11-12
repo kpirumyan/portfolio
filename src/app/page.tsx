@@ -6,7 +6,10 @@ import Home from "@/sections/Home";
 export default async function Page() {
   return (
     <>
-      <section id="home" className="bg-gradient-to-b from-secondary to-white">
+      <section
+        id="home"
+        className="bg-gradient-to-b from-secondary to-white pb-40"
+      >
         <Suspense fallback={<Loading />}>
           <Home />
         </Suspense>
