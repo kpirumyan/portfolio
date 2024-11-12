@@ -1,1 +1,1 @@
-export type { PhraseData, LinkData, RoleData } from "./data";
+export type { PhraseData, LinkData, ServiceData } from "./data";

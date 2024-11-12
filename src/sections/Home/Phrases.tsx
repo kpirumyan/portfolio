@@ -3,19 +3,10 @@
 import { useEffect, useState } from "react";
 import { PhraseData } from "@/interfaces";
 
-const phrases: PhraseData[] = [
-  {
-    id: 1,
-    text: "Always borrow money from a pessimist. He won't expect it back.",
-  },
-  {
-    id: 2,
-    text: "Tempora mutantur et nos mutamur in illis.",
-  },
-  {
-    id: 3,
-    text: "Phrase 3",
-  },
+const phrases: PhraseData = [
+  "Always borrow money from a pessimist. He won't expect it back.",
+  "Tempora mutantur et nos mutamur in illis.",
+  "Phrase 3",
 ];
 
 export default function Phrases() {
@@ -29,5 +20,5 @@ export default function Phrases() {
     return () => clearInterval(id);
   }, []);
 
-  return <span key={phrases[phraseIdx].id}>{phrases[phraseIdx].text}</span>;
+  return <span key={phrases[phraseIdx]}>{phrases[phraseIdx]}</span>;
 }
