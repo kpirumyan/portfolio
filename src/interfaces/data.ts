@@ -11,3 +11,9 @@ export interface ServiceData {
   description: string;
   icon: React.FunctionComponent;
 }
+
+export interface SkillData {
+  name: string;
+  value: number;
+  text?: string;
+}

@@ -20,5 +20,12 @@ export default function Phrases() {
     return () => clearInterval(id);
   }, []);
 
-  return <span key={phrases[phraseIdx]}>{phrases[phraseIdx]}</span>;
+  return (
+    <div
+      className="text-lg max-w-xl font-normal mt-12 text-tertiary"
+      key={phrases[phraseIdx]}
+    >
+      {phrases[phraseIdx]}
+    </div>
+  );
 }

@@ -24,9 +24,7 @@ export default function Info() {
         </div>
       </div>
 
-      <div className="description opacity-80 text-lg max-w-xl font-normal mt-12">
-        <Phrases />
-      </div>
+      <Phrases />
 
       <div className="mt-8">
         <SocialLinks />

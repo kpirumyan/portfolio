@@ -16,9 +16,7 @@ export default function Card({
         <Icon />
       </div>
       <h3 className="text-center text-2xl font-bold mb-4">{title}</h3>
-      <div className="min-h-[225px] opacity-80 text-tertiary">
-        {description}
-      </div>
+      <div className="min-h-[225px] text-tertiary">{description}</div>
       <div
         className={clsx("absolute", {
           "-left-[27px] -bottom-[27px]": decorSide === "left",

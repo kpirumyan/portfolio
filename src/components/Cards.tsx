@@ -1,4 +1,4 @@
-import { Card, Dots } from "@/components";
+import { Card } from "@/components";
 import { ServiceData } from "@/interfaces";
 import { FaGear, FaLaptop, FaThumbsUp } from "react-icons/fa6";
 
@@ -29,9 +29,6 @@ export default function Cards() {
       {services.map((service) => (
         <Card key={service.title} data={service} decorSide={"center"} />
       ))}
-      <div className="justify-self-center col-start-2">
-        <Dots count={services.length} />
-      </div>
     </div>
   );
 }

@@ -6,14 +6,13 @@
   :root {
     --color-1: #29a486;
     --color-2: #f0ebe3;
-    --color-3: #2b2b2b;
-    --color-4: #5cfdc3;
+    --color-3: rgb(38 38 38 / 80%);
   }
 }
 
 @layer components {
   .btn {
-    @apply inline-block relative bg-secondary h-14 rounded-full border-2 border-black px-10 text-sm font-bold uppercase leading-13 tracking-wider text-black shadow-3 z-10;
+    @apply inline-block relative h-14 rounded-full border-2 border-black px-10 text-sm font-bold uppercase leading-13 tracking-wider text-black shadow-3 z-10;
   }
   .btn-link {
     @apply relative ml-12 inline-block h-14 px-4 font-bold uppercase leading-14 before:pointer-events-none before:absolute before:-left-12 before:top-1/2 before:h-0.5 before:w-10 before:cursor-none before:bg-black;
@@ -25,7 +24,7 @@
     @apply flex-1 text-center;
   }
   .bg-title {
-    @apply relative -top-4 text-[17vw] font-bold leading-[1px] whitespace-nowrap opacity-[.02];
+    @apply relative -top-4 text-[17vw] font-bold leading-[1px] whitespace-nowrap text-black/[.03];
   }
   .v-line-block {
     @apply w-0.5 bg-black absolute top-4 bottom-4 z-10 before:absolute before:w-8 before:h-8 before:-left-4 before:border-2 before:border-solid before:border-black before:rounded-full before:bg-white before:shadow-3 after:absolute after:w-8 after:h-8 after:-left-4 after:border-2 after:border-solid after:border-black after:rounded-full after:bg-white after:shadow-3 after:bottom-0;
