@@ -4,7 +4,7 @@ import { Skill } from "@/components";
 const skills: SkillData[] = [
   {
     name: "Javascript",
-    value: 55,
+    value: 95,
   },
   {
     name: "PHP",
@@ -15,8 +15,20 @@ const skills: SkillData[] = [
     value: 85,
   },
   {
-    name: "Test",
+    name: "Drupal",
+    value: 95,
+  },
+  {
+    name: "Databases",
     value: 85,
+  },
+  {
+    name: "Git",
+    value: 95,
+  },
+  {
+    name: "CSS, SASS",
+    value: 95,
   },
 ];
 
@@ -24,7 +36,7 @@ export default function Skills() {
   return (
     <div className="grid grid-cols-3">
       {skills.map((skill) => (
-        <Skill key={skill.name} data={skill} />
+        <Skill key={skill.name} {...skill} />
       ))}
     </div>
   );

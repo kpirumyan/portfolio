@@ -12,7 +12,7 @@ export default function Info() {
           </span>
         </div>
         <h1
-          className={`whitespace-nowrap text-7xl tracking-widest text-white text-shadow mt-8 mb-2 ${marhey.className}`}
+          className={`whitespace-nowrap tracking-widest text-white text-shadow mt-8 mb-2 ${marhey.className}`}
         >
           <span className="text-primary ">Karen</span> Pirumyan
         </h1>

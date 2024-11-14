@@ -1,1 +1,9 @@
-export type { PhraseData, LinkData, ServiceData, SkillData } from "./data";
+export type {
+  PhraseData,
+  LinkData,
+  ServiceData,
+  SkillData,
+  HistoryItemData,
+  HistoryData,
+  MoreItemData,
+} from "./data";

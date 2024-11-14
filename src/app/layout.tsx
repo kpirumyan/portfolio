@@ -11,10 +11,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <header>{/*<Menu />*/}</header>
         <main>{children}</main>
         <footer>
-          <section
-            id="footer"
-            className="mt-16 bg-gradient-to-b from-secondary to-white"
-          >
+          <section id="footer" className="even">
             <Suspense fallback={<Loading />}>
               <Footer />
             </Suspense>

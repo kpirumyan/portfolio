@@ -26,14 +26,14 @@ export default function SectionTemplate({
       >
         <VLine side={side} />
       </div>
-      <div className="col-span-6 col-start-4 mb-16 font-bold">
+      <div className="col-span-6 col-start-4 mb-12 font-bold">
         <SectionHeader
           title={headerTitle}
           section={headerSecondaryTitle}
           prefix={headerPrefix}
         />
       </div>
-      <div className="col-span-10 col-start-2">{children}</div>
+      <div className="col-span-10 col-start-2 mb-32">{children}</div>
       <div className="col-span-12">
         <SectionBG text={bgText} />
       </div>

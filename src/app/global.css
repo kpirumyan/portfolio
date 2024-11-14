@@ -8,9 +8,37 @@
     --color-2: #f0ebe3;
     --color-3: rgb(38 38 38 / 80%);
   }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+  }
 }
 
 @layer components {
+  .even {
+    @apply bg-gradient-to-b from-white to-secondary;
+  }
+  .odd {
+    @apply bg-gradient-to-b from-secondary to-white;
+  }
   .btn {
     @apply inline-block relative h-14 rounded-full border-2 border-black px-10 text-sm font-bold uppercase leading-13 tracking-wider text-black shadow-3 z-10;
   }
@@ -28,5 +56,8 @@
   }
   .v-line-block {
     @apply w-0.5 bg-black absolute top-4 bottom-4 z-10 before:absolute before:w-8 before:h-8 before:-left-4 before:border-2 before:border-solid before:border-black before:rounded-full before:bg-white before:shadow-3 after:absolute after:w-8 after:h-8 after:-left-4 after:border-2 after:border-solid after:border-black after:rounded-full after:bg-white after:shadow-3 after:bottom-0;
+  }
+  .history-item-title {
+    @apply relative border-b-2 border-r-2 border-black first-of-type:border-r-transparent after:content-['+'] after:leading-10 after:absolute after:w-12 after:h-12 after:-right-6 after:-bottom-6 after:rounded-full after:bg-secondary after:shadow-3 after:border-2 after:border-black after:text-3xl after:font-normal after:text-center after:z-10 after:cursor-pointer;
   }
 }

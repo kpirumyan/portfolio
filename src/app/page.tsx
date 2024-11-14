@@ -6,48 +6,42 @@ import Skills from "@/sections/Skills";
 import Contacts from "@/sections/Contacts";
 import Portfolio from "@/sections/Portfolio";
 import Resume from "@/sections/Resume";
+import More from "@/sections/More";
 
 export default async function Page() {
   return (
     <>
-      <section
-        id="home"
-        className="bg-gradient-to-b from-secondary to-white pb-40"
-      >
+      <section id="home" className="odd pb-40">
         <Suspense fallback={<Loading />}>
           <Home />
         </Suspense>
       </section>
-      <section
-        id="services"
-        className="bg-gradient-to-b from-white to-secondary"
-      >
+      <section id="services" className="even">
         <Suspense fallback={<Loading />}>
           <Services />
         </Suspense>
       </section>
-      <section id="skills" className="bg-gradient-to-b from-secondary to-white">
+      <section id="skills" className="odd">
         <Suspense fallback={<Loading />}>
           <Skills />
         </Suspense>
       </section>
-      <section id="resume" className="bg-gradient-to-b from-white to-secondary">
+      <section id="resume" className="even">
         <Suspense fallback={<Loading />}>
           <Resume />
         </Suspense>
       </section>
-      <section
-        id="portfolio"
-        className="bg-gradient-to-b from-secondary to-white"
-      >
+      <section id="portfolio" className="odd">
         <Suspense fallback={<Loading />}>
           <Portfolio />
         </Suspense>
       </section>
-      <section
-        id="contacts"
-        className="bg-gradient-to-b from-white to-secondary"
-      >
+      <section id="more" className="even">
+        <Suspense fallback={<Loading />}>
+          <More />
+        </Suspense>
+      </section>
+      <section id="contacts" className="odd">
         <Suspense fallback={<Loading />}>
           <Contacts />
         </Suspense>

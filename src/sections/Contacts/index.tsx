@@ -7,7 +7,7 @@ export default function Contacts() {
       headerTitle="Contact Me"
       headerSecondaryTitle="Talk About Ideas"
       headerPrefix="Let's"
-      side="right"
+      side="left"
     >
       <>contact me!</>
     </SectionTemplate>

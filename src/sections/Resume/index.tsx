@@ -1,4 +1,4 @@
-import { SectionTemplate } from "@/components";
+import { Histories, SectionTemplate } from "@/components";
 
 export default function Resume() {
   return (
@@ -8,7 +8,7 @@ export default function Resume() {
       headerSecondaryTitle="Story"
       side="right"
     >
-      <>resume</>
+      <Histories />
     </SectionTemplate>
   );
 }

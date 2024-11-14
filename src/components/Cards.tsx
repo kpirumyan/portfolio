@@ -27,7 +27,7 @@ export default function Cards() {
   return (
     <div className="grid grid-cols-3 col-span-10 col-start-2 gap-8  mb-20">
       {services.map((service) => (
-        <Card key={service.title} data={service} decorSide={"center"} />
+        <Card key={service.title} {...service} decorSide="center" />
       ))}
     </div>
   );

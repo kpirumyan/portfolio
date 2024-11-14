@@ -17,3 +17,31 @@ export interface SkillData {
   value: number;
   text?: string;
 }
+
+export interface HistoryItemData {
+  title: string;
+  subtitle: string;
+  text: string;
+  date: {
+    from: string;
+    to?: string;
+  };
+}
+
+export interface HistoryData {
+  education: HistoryItemData[];
+  experience: HistoryItemData[];
+}
+
+export interface MoreData {
+  clients: number;
+  projects: number;
+  experience: number;
+  lineOfCode: number;
+}
+
+export interface MoreItemData {
+  title: string;
+  value: number;
+  icon: React.FunctionComponent;
+}
