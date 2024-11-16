@@ -11,7 +11,7 @@ const more: MoreItemData[] = [
 
 export default function More() {
   return (
-    <div className="grid grid-cols-4">
+    <div className="grid grid-cols-4 gap-24 justify-items-center">
       {more.map((m) => (
         <MoreItem key={m.title} {...m} />
       ))}
