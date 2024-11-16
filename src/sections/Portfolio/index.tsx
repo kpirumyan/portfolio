@@ -1,4 +1,4 @@
-import { SectionTemplate } from "@/components";
+import { PortfolioCards, SectionTemplate } from "@/components";
 
 export default function Portfolio() {
   return (
@@ -8,7 +8,7 @@ export default function Portfolio() {
       headerSecondaryTitle="Cases"
       side="left"
     >
-      <>portfolio</>
+      <PortfolioCards />
     </SectionTemplate>
   );
 }

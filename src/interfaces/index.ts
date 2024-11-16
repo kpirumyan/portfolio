@@ -1,7 +1,8 @@
 export type {
   PhraseData,
   LinkData,
-  ServiceData,
+  ServiceCardData,
+  PortfolioCardData,
   SkillData,
   HistoryItemData,
   HistoryData,

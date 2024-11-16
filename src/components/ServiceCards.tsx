@@ -1,8 +1,8 @@
-import { Card } from "@/components";
-import { ServiceData } from "@/interfaces";
+import { ServiceCard } from "@/components";
+import { ServiceCardData } from "@/interfaces";
 import { FaGear, FaLaptop, FaThumbsUp } from "react-icons/fa6";
 
-const services: ServiceData[] = [
+const services: ServiceCardData[] = [
   {
     title: "Why choose me",
     description:
@@ -23,11 +23,11 @@ const services: ServiceData[] = [
   },
 ];
 
-export default function Cards() {
+export default function ServiceCards() {
   return (
     <div className="grid grid-cols-3 col-span-10 col-start-2 gap-8  mb-20">
       {services.map((service) => (
-        <Card key={service.title} {...service} decorSide="center" />
+        <ServiceCard key={service.title} {...service} decorSide="center" />
       ))}
     </div>
   );

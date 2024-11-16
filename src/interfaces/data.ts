@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface LinkData {
   id: string;
   icon: React.FunctionComponent;
@@ -6,10 +8,16 @@ export interface LinkData {
 
 export type PhraseData = string[];
 
-export interface ServiceData {
+export interface ServiceCardData {
   title: string;
   description: string;
   icon: React.FunctionComponent;
+}
+
+export interface PortfolioCardData {
+  title: string;
+  description: string;
+  img: StaticImageData;
 }
 
 export interface SkillData {

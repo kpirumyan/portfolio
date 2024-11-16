@@ -1,13 +1,13 @@
-import { ServiceData } from "@/interfaces";
+import { ServiceCardData } from "@/interfaces";
 import Image from "next/image";
 import clsx from "clsx";
 
-export default function Card({
+export default function ServiceCard({
   title,
   icon,
   description,
   decorSide,
-}: ServiceData & { decorSide: "left" | "right" | "center" }) {
+}: ServiceCardData & { decorSide: "left" | "right" | "center" }) {
   const Icon = icon;
   return (
     <div className="relative rounded-2xl bg-white overflow-hidden min-h-72 p-8">
@@ -20,7 +20,7 @@ export default function Card({
         className={clsx("absolute", {
           "-left-[27px] -bottom-[27px]": decorSide === "left",
           "-right-[27px] -bottom-[27px]": decorSide === "right",
-          "left-[97px] -bottom-[80px]": decorSide === "center",
+          "left-1/2 -bottom-[80px] -translate-x-1/2": decorSide === "center",
         })}
       >
         <Image
@@ -28,7 +28,6 @@ export default function Card({
           alt="Image decoration"
           width={141}
           height={141}
-          className=""
         />
       </div>
     </div>
