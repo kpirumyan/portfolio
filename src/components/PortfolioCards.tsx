@@ -1,6 +1,6 @@
 import { PortfolioCard } from "@/components";
 import { PortfolioCardData } from "@/interfaces";
-import projectImg from "@/../public/project.jpeg";
+import projectImg from "@/images/project.jpeg";
 
 const projects: PortfolioCardData[] = [
   {

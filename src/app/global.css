@@ -60,4 +60,13 @@
   .history-item-title {
     @apply relative border-b-2 border-r-2 border-black first-of-type:border-r-transparent after:content-['+'] after:leading-10 after:absolute after:w-12 after:h-12 after:-right-6 after:-bottom-6 after:rounded-full after:bg-secondary after:shadow-3 after:border-2 after:border-black after:text-3xl after:font-normal after:text-center after:z-10 after:cursor-pointer;
   }
+  .icon-with-shadow {
+    @apply relative shadow-3 rounded-full bg-white border-2 border-black w-14 h-14 flex items-center justify-center after:absolute after:bg-black after:w-10 after:h-0.5 after:content-[''] after:top-1/2 after:left-full;
+  }
+  .form-label {
+    @apply ml-8 after:content-['*'] after:text-primary after:ml-0.5;
+  }
+  .form-input {
+    @apply block w-full mt-2.5 px-8 h-16 rounded-[30px] bg-white border-2 border-black text-base font-normal;
+  }
 }

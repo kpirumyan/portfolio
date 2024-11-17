@@ -3,6 +3,7 @@ import Image from "next/image";
 import clsx from "clsx";
 import { FaArrowRight } from "react-icons/fa6";
 import Link from "next/link";
+import decorImg2 from "@/images/pat-2.png";
 
 export default function PortfolioCard({
   title,
@@ -35,8 +36,8 @@ export default function PortfolioCard({
           })}
         >
           <Image
-            src="/pat-2.png"
-            alt="Image decoration"
+            src={decorImg2}
+            alt="Decoration Image"
             width={141}
             height={141}
           />

@@ -16,3 +16,5 @@ export { default as History } from "./History";
 export { default as HistoryItem } from "./HistoryItem";
 export { default as More } from "./More";
 export { default as MoreItem } from "./MoreItem";
+export { default as ContactsInfo } from "./ContactsInfo";
+export { default as ContactsForm } from "./ContactsForm";

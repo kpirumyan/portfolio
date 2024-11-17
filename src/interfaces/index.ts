@@ -1,8 +1,9 @@
 import { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
 
 export interface LinkData {
   id: string;
-  icon: React.FunctionComponent;
+  icon: IconType;
   url: string;
 }
 
@@ -11,7 +12,7 @@ export type PhraseData = string[];
 export interface ServiceCardData {
   title: string;
   description: string;
-  icon: React.FunctionComponent;
+  icon: IconType;
 }
 
 export interface PortfolioCardData {
@@ -48,8 +49,14 @@ export interface MoreData {
   lineOfCode: number;
 }
 
+export interface ContactsInfoData {
+  title: string;
+  value: string;
+  icon: IconType;
+}
+
 export interface MoreItemData {
   title: string;
   value: number;
-  icon: React.FunctionComponent;
+  icon: IconType;
 }

@@ -1,6 +1,7 @@
 import { ServiceCardData } from "@/interfaces";
 import Image from "next/image";
 import clsx from "clsx";
+import decorImg2 from "@/images/pat-2.png";
 
 export default function ServiceCard({
   title,
@@ -24,8 +25,8 @@ export default function ServiceCard({
         })}
       >
         <Image
-          src="/pat-2.png"
-          alt="Image decoration"
+          src={decorImg2}
+          alt="Decoration image"
           width={141}
           height={141}
         />
