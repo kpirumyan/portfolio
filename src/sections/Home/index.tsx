@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="container">
       <div className="grid grid-cols-12 mt-8">
-        <div className="relative col-span-1">
+        <div className="relative col-span-1 row-span-2">
           <VLine side={"left"} />
         </div>
         <div className="mt-24 col-start-2 col-span-6">
@@ -23,7 +23,9 @@ export default function Home() {
         <div className="mx-auto w-full col-start-8 col-span-5">
           <MainImage />
         </div>
-        <SectionBG text="Web Developer" />
+        <div className="col-span-10 col-start-2 relative justify-self-center">
+          <SectionBG text="Web Developer" />
+        </div>
       </div>
     </div>
   );

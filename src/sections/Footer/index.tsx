@@ -2,7 +2,7 @@ import { SocialLinks } from "@/components";
 
 export default function Index() {
   return (
-    <div className="container grid grid-cols-3 py-16 text-sm font-bold uppercase tracking-wider">
+    <div className="container grid grid-cols-3 pb-16 pt-28 text-sm font-bold uppercase tracking-wider">
       <div className="">
         <SocialLinks />
       </div>

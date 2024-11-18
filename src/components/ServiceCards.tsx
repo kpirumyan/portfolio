@@ -25,7 +25,7 @@ const services: ServiceCardData[] = [
 
 export default function ServiceCards() {
   return (
-    <div className="grid grid-cols-3 col-span-10 col-start-2 gap-8  mb-20">
+    <div className="grid grid-cols-3 col-span-10 col-start-2 gap-8">
       {services.map((service) => (
         <ServiceCard key={service.title} {...service} decorSide="center" />
       ))}

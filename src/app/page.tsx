@@ -11,7 +11,7 @@ import More from "@/sections/More";
 export default async function Page() {
   return (
     <>
-      <section id="home" className="odd pb-40">
+      <section id="home" className="odd">
         <Suspense fallback={<Loading />}>
           <Home />
         </Suspense>

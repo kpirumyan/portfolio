@@ -20,7 +20,7 @@ export default function SectionTemplate({
     <div className="container grid grid-cols-12 text-black">
       <div
         className={clsx(
-          "relative col-span-1 row-span-3",
+          "relative col-span-1 row-start-1 row-span-3",
           side === "right" && "col-start-12",
         )}
       >
@@ -33,8 +33,8 @@ export default function SectionTemplate({
           prefix={headerPrefix}
         />
       </div>
-      <div className="col-span-10 col-start-2 mb-32">{children}</div>
-      <div className="col-span-12">
+      <div className="col-span-10 col-start-2">{children}</div>
+      <div className="col-span-10 col-start-2 h-[140px] justify-self-center">
         <SectionBG text={bgText} />
       </div>
     </div>
