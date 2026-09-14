@@ -20,7 +20,7 @@ export default function SectionTemplate({
     <div className="container grid grid-cols-12 text-black">
       <div
         className={clsx(
-          "relative col-span-1 row-start-1 row-span-3",
+          "relative col-span-1 row-start-1 row-span-3 hidden lg:block",
           side === "right" && "col-start-12",
         )}
       >

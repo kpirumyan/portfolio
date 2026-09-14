@@ -10,16 +10,16 @@
   }
 
   h1 {
-    font-size: 4.5rem;
+    @apply text-2xl sm:text-5xl lg:text-7xl
   }
   h2 {
-    font-size: 3rem;
+    @apply text-xl sm:text-3xl lg:text-5xl
   }
   h3 {
-    font-size: 1.5rem;
+    @apply text-lg sm:text-xl lg:text-2xl
   }
   h4 {
-    font-size: 1.25rem;
+    @apply text-base sm:text-lg lg:text-xl
   }
 
   h1,
@@ -52,7 +52,7 @@
     @apply flex-1 text-center;
   }
   .bg-title {
-    @apply relative -top-32 col-span-12 text-center text-[206px] 2xl:text-[248px] font-bold whitespace-nowrap text-black/[.015] leading-[1] tracking-wider;
+    @apply relative -top-32 col-span-12 text-center xl:text-[206px] 2xl:text-[248px] font-bold whitespace-nowrap text-black/[.015] leading-[1] tracking-wider;
   }
   .v-line-block {
     @apply w-0.5 bg-black absolute top-4 bottom-4 z-10 before:absolute before:w-8 before:h-8 before:-left-4 before:border-2 before:border-solid before:border-black before:rounded-full before:bg-white before:shadow-3 after:absolute after:w-8 after:h-8 after:-left-4 after:border-2 after:border-solid after:border-black after:rounded-full after:bg-white after:shadow-3 after:bottom-0;

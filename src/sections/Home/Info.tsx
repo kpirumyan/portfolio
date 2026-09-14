@@ -1,6 +1,7 @@
 import { caveat, marhey } from "@/app/fonts";
 import { SocialLinks } from "@/components";
 import Phrases from "@/sections/Home/Phrases";
+import MainImage from "./MainImage";
 
 export default function Info() {
   return (
@@ -24,6 +25,7 @@ export default function Info() {
         </div>
       </div>
 
+      <MainImage />
       <Phrases />
 
       <div className="mt-8">

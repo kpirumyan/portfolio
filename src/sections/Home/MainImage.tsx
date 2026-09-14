@@ -5,13 +5,12 @@ import mainImg from "@/images/main-img.png";
 
 export default function MainImage() {
   return (
-    <div className="relative h-[42.5rem] tracking-wider">
-      <span className="absolute w-full h-full z-10 overflow-hidden rounded-b-[340px] z-20">
+    <div className="relative h-[22rem] lg:h-[42.5rem] tracking-wider">
+      <span className="absolute w-full h-full z-10 overflow-hidden rounded-b-[160px] lg:rounded-b-[320px] z-20">
         <Image
           src={mainImg}
           alt="Karen Pirumyan"
-          width={360}
-          height={400}
+          width={180}
           className="absolute left-[20%] bottom-0"
         />
       </span>
@@ -19,22 +18,19 @@ export default function MainImage() {
       <Image
         src={decorImg1}
         alt="Decoration image"
-        width={226}
-        height={226}
+        width={114}
         className="absolute top-0 right-0"
       />
       <Image
         src={decorImg1}
         alt="Decoration image"
-        width={226}
-        height={226}
+        width={114}
         className="pat-2 absolute -left-52 bottom-0"
       />
       <Image
         src={decorImg2}
         alt="Decoration image"
-        width={141}
-        height={141}
+        width={70}
         className="pat-2 absolute right-0 -bottom-16"
       />
       <div className="info-list absolute bottom-0 uppercase font-bold w-full">
